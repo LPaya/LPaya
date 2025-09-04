@@ -269,7 +269,7 @@ h4 {
 
 @media (max-width: 540px) {
     main {
-        margin-top: 70px;
+        margin: max(12.96vw, 60px) 10px;
     }
     
     #hero-img {
@@ -283,9 +283,9 @@ h4 {
     }
 
     #CTA {
-        width: max(37.4vw, 150px);
-        height: max(12.33vw, 50px);
-        font-size: max(5.19vw, 24px);
+        width: max(37.4vw, 180px);
+        height: max(12.33vw, 60px);
+        font-size: max(5.19vw, 20px);
     }
 
     #top {
@@ -309,4 +309,5 @@ h4 {
         height: max(12.33vw, 50px);
         font-size: max(5.19vw, 24px);
     }
+
 }
