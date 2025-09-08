@@ -1,0 +1,315 @@
+html {
+    font-size: 16px;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #2f2f2f;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 0 20px;
+    background-color: #c1c1c1;
+    border-radius: 1.5rem;
+}
+
+h1 {
+    font-size: max(2.34vw, 23.4px);
+    color: #1f51ff;
+}
+
+#logo {
+    width: max(3.66vw, 36.6px);
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main {
+    margin: max(5.13vw, 30px) 10px 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: max(2.2vw, 15px);
+}
+
+#hero-img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 29.29vw;
+    height: 29.29vw;
+}
+
+#wow {
+    font-size: max(3.95vw, 28px);
+    font-weight: 900;
+}
+
+#CTA {
+    background-color: #c1c1c1;
+    width: max(21.94vw, 180px);
+    height: max(7.32vw, 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1f51ff;
+    text-decoration: none;
+    font-size: max(3.51vw, 26px);
+    font-weight: 800;
+    border-radius: 2rem;
+}
+
+#CTA:hover {
+    background-color: #1f51ff;
+    color: #c1c1c1;
+}
+
+#top {
+    text-align: center;
+    font-size: max(3.07vw, 24px);
+    color: #c1c1c1;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.box-1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.box-2 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    justify-self: end;
+}
+
+.box-3 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.box-4 {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    justify-self: end;
+}
+
+.box-5 {
+    grid-row: 5 / 6;
+}
+
+.box {
+    width: fit-content;
+}
+
+h2 {
+    color: #1f51ff;
+    font-size: max(2.93vw, 22px);
+    font-weight: 600;
+}
+
+p {
+    color: #c1c1c1;
+    font-size: max(2.05vw, 18px);
+    font-weight: 600;
+}
+
+h3 {
+    font-size: max(3.07vw, 24px);
+    color: #c1c1c1;
+    text-align: center;
+    font-weight: 600;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: max(0.73vw, 4px);
+    justify-content: center;
+}
+
+#page {
+    width: max(29.29vw, 300px);
+    height: auto;
+    border: 4px solid #c1c1c1;
+}
+
+#CTA-2 {
+    background-color: #c1c1c1;
+    width: max(21.94vw, 220px);
+    height: max(7.32vw, 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1f51ff;
+    text-decoration: none;
+    font-size: max(3.51vw, 34px);
+    font-weight: 800;
+    border-radius: 2rem;
+    margin: max(4.39vw, 35px) auto;
+}
+
+#CTA-2:hover {
+    background-color: #1f51ff;
+    color: #c1c1c1;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: max(1.46vw, 15px) 0;
+    background-color: #c1c1c1;
+    padding: max(1.1vw, 11px) max(1.46vw, 15px);
+}
+
+#tiktok, #insta {
+    width: max(2.65vw, 36.6px);
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+#tiktok:hover, #insta:hover {
+    transform: scale(1.1);
+} 
+
+h4 {
+    font-size: max(1.76vw, 18px);
+    margin: 0;
+}
+
+.social {
+    display: flex;
+    gap: max(1.46vw, 10px);
+}
+
+@media (max-width: 640px) {
+    header {
+        margin: 0 8px;
+        padding: 0 15px;
+    }
+
+
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #logo {
+        width: 30px;
+        height: auto;
+    }
+
+    #wow {
+        font-size: 4.38vw;
+    }
+
+    #CTA {
+        width: 28.13vw;
+        height: 10.94vw;
+        font-size: 4.06vw;
+    }
+
+    #top {
+        font-size: 3.75vw;
+    }
+
+    h2 {
+        font-size: 3.44vw;
+    }
+
+    p {
+        font-size: 2.81vw;
+    }
+
+    h3 {
+        font-size: max(3.75vw, 28px);
+    }
+
+    #page {
+        width: max(46.88vw, 300px);
+    }
+
+    #CTA-2 {
+        width: 34.38vw;
+        height: 11.72vw;
+        font-size: 5.31vw;
+    }
+
+    #insta, #tiktok {
+        width: 30px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 540px) {
+    main {
+        margin: 27.7vw 10px;
+        justify-content: center;
+    }
+    
+    #hero-img {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    #wow {
+        font-size: max(5.93vw, 20px);
+    }
+
+    #CTA {
+        width: max(37.4vw, 170px);
+        height: max(12.33vw, 60px);
+        font-size: max(5.19vw, 22px);
+    }
+
+    #top {
+        font-size: max(5.19vw, 20px);
+    }
+
+    h2 {
+        font-size: max(3.7vw, 18px);
+    }
+
+    p {
+        font-size: max(2.96vw, 16px);
+    }
+
+    h3 {
+        font-size: max(5.19vw, 20px); 
+    }
+
+    #CTA-2 {
+        width: max(37.4vw, 150px);
+        height: max(12.33vw, 50px);
+        font-size: max(5.19vw, 24px);
+    }
+}
