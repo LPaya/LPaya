@@ -26,7 +26,7 @@
     <main>
         <div class="hero">
             <h1 id="wow">صمم صفحتك الالكترونية وابدأ مشروعك!</h1>
-            <a id="CTA" href="https://wa.me/966571589739" target="_blank">تواصل واتساب</a>
+            <a class="CTA" id="CTA" href="https://wa.me/966571589739" target="_blank">تواصل واتساب</a>
         </div>
 
         <img id="hero-img" src="images/photo_2025-09-02_16-22-03.jpg" alt="">
@@ -71,7 +71,7 @@
             </div>
         </div>
 
-        <a id="CTA-2" href="https://wa.me/966571589739" target="_blank">تواصل</a>
+        <a class="CTA" id="CTA-2" href="https://wa.me/966571589739" target="_blank">تواصل</a>
     </section>
 
     <footer>
@@ -82,9 +82,23 @@
 
         <h4>LPaya@</h4>
     </footer>
+
+    <script>
+document.querySelectorAll(".CTA").forEach(function(element) {
+  element.addEventListener("click", function() {
+    gtag('event', 'cta_click', {
+      'event_category': 'engagement',
+      'event_label': element.innerText, // يرسل نص الزر
+      'value': 1
+    });
+  });
+});
+</script>
+
 </body>
 
 </html>
+
 
 
 
