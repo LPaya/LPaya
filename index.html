@@ -83,21 +83,25 @@
         <h4>LPaya@</h4>
     </footer>
 
-    <script>
-document.querySelectorAll(".CTA").forEach(function(element) {
-  element.addEventListener("click", function() {
-    gtag('event', 'cta_click', {
-      'event_category': 'engagement',
-      'event_label': element.innerText, // يرسل نص الزر
-      'value': 1
+  <script>
+    window.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll(".CTA").forEach(function(element) {
+        element.addEventListener("click", function() {
+          console.log("CTA pressed ✅"); // للتأكد في الـ Console
+          gtag('event', 'cta_click', {
+            'event_category': 'engagement',
+            'event_label': element.innerText,
+            'value': 1
+          });
+        });
+      });
     });
-  });
-});
-</script>
+  </script>
 
 </body>
 
 </html>
+
 
 
 
