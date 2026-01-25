@@ -12,6 +12,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
 
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DB5115YCZ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DB5115YCZ9');
+</script>
+
 </head>
 <body>
     <img src="images/photo_2025-09-02_16-22-03.jpg" alt="" class="logo">
@@ -23,12 +33,12 @@
         
         <div class="container">
             <div class="container-1 animated slide-left">
-                <a href="client.html" target="_blank">صاحب/ة مشروع <br><span>(اريد صفحة لمتجري)</span>
+                <a href="client.html" target="_blank" class="clientss">صاحب/ة مشروع <br><span>(اريد صفحة لمتجري)</span>
                 <img src="images/icons8-person-100.png" alt="person"></a>
             </div>
         
             <div class="container-1 animated slide-right">
-                <a href="partners.html" target="_blank">وكالة تسويق/شريك تصميم صفحات <br><span>(اريد تعاون مع مصمم صفحات)</span>
+                <a href="partners.html" target="_blank" class="partnerss">وكالة تسويق/شريك تصميم صفحات <br><span>(اريد تعاون مع مصمم صفحات)</span>
                 <img src="images/icons8-handshake-100.png" alt="handshake"></a>
             </div>
         </div>
@@ -46,6 +56,39 @@ const observer = new IntersectionObserver((entries)=> {
 
 elements.forEach(el => observer.observe(el));</script>
 
+        <script>
+    window.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll(".clientss").forEach(function(element) {
+        element.addEventListener("click", function() {
+          console.log("CTA pressed ✅"); // للتأكد في الـ Console
+          gtag('event', 'clients_click', {
+            'event_category': 'engagement',
+            'event_label': element.innerText,
+            'value': 1
+          });
+        });
+      });
+    });
+  </script>
+
+    <script>
+    window.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll(".partnerss").forEach(function(element) {
+        element.addEventListener("click", function() {
+          console.log("CTA pressed ✅"); // للتأكد في الـ Console
+          gtag('event', 'partners_click', {
+            'event_category': 'engagement',
+            'event_label': element.innerText,
+            'value': 1
+          });
+        });
+      });
+    });
+  </script> 
+
+    
+
 </body>
 
 </html>
+
